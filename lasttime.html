@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SORRY - My Best Friend</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body style='background-image:url("Redtop.jpeg"); background-position: center; background-repeat: no-repeat; background-size: cover; width:100%; height:100vh; display: flex; align-items: center;'>
+    >
+    <div class="container" >
+        <div class="gif01">
+            <img src="./04.gif" alt="" srcset="">
+        </div>
+        <div class="text01">
+            <h2>
+                Prajakta man jao na ! 
+                <!-- Lorem ipsum dolor sit  -->
+            </h2>
+        </div>
+        <div class="text01">
+            <h4>
+                red colour aap p accha lagta lekin aap gusse mai laal acchi nahi lag rahi
+            </h4>
+        </div>
+        <div class="btn">
+            <div> <a href="./thanku.html"><button class="yesbtn">Yes</button></a></div>
+            <div style="height:200px; position: relative;">
+    <button class="nobtn" style="position:absolute;">No</button>
+</div>
+
+        </div>
+    </div>
+</body>
+<script>
+    let nobtn = document.querySelector(".nobtn");
+    let count = 0;
+
+    nobtn.onmouseover = function () {
+        count++;
+
+        if (count <= 3) {
+            // random position change
+            let x = Math.floor(Math.random() * 150);
+            let y = Math.floor(Math.random() * 150);
+
+            nobtn.style.left = x + "px";
+            nobtn.style.top = y + "px";
+        } else {
+            // hide after 3 tries
+            nobtn.style.display = "none";
+        }
+    };
+</script>
+
+
+
+</html>
